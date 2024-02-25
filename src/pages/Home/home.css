@@ -1,3 +1,8 @@
+.loading h2 {
+    color: #fff;
+    margin: 12px;
+}
+
 .lista-filmes {
     max-width: 800px;
     margin: 14px auto;

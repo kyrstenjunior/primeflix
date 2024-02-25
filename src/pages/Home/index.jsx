@@ -5,6 +5,7 @@ import './home.css';
 
 const index = () => {
   const [filmes, setFilmes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadFilmes() {
@@ -17,12 +18,19 @@ const index = () => {
       });
 
       setFilmes(response.data.results);
-      console.log(response.data.results);
-
+      setLoading(false);
     }
 
     loadFilmes();
   }, []);
+
+  if(loading) {
+    return(
+      <div className="loading">
+        <h2>Carregando filmes...</h2>
+      </div>
+    )
+  }
 
 
   return (
@@ -33,7 +41,7 @@ const index = () => {
             <article key={filme.id}>
               <strong>{filme.title}</strong>
               <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
-              <Link to={`/filme/${filme.id}`} >Acessar</Link>
+              <Link to={`/filmes/${filme.id}`} >Acessar</Link>
             </article>
           )
         })}

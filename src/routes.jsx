@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/index';
 import Filmes from './pages/Filmes/index';
 import Header from './components/Header';
+import Erro from './pages/Erro';
 
 const RoutesApp = () => {
   return (
@@ -11,6 +12,9 @@ const RoutesApp = () => {
       <Routes>
           <Route path='/' element={ <Home /> } />
           <Route path='/filmes/:id' element={ <Filmes /> } />
+          
+          
+          <Route path='*' element={ <Erro /> } />
       </Routes>
     </BrowserRouter>
   )
