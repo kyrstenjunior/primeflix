@@ -1,5 +1,6 @@
 .filme-info {
     margin-top: 18px;
+    margin-bottom: 36px;
     display: flex;
     flex-direction: column;
     max-width: 800px;
