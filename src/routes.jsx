@@ -15,8 +15,7 @@ const RoutesApp = () => {
           <Route path='/filmes/:id' element={ <Filmes /> } />
           <Route path='/favoritos' element={ <Favoritos /> } />
           
-          
-           <Route path='*' element={ <Erro /> } /> {/* Precisa der o último */}
+          <Route path='*' element={ <Erro /> } /> {/* Precisa der o último */}
       </Routes>
     </BrowserRouter>
   )
