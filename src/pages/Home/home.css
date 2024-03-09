@@ -33,9 +33,14 @@
     color: #fff;
 }
 
+.lista-filmes .titulo-full {
+    color: #000;
+}
+
 .melhores {
     width: 100%;
     background-color: #ccc;
+    margin-bottom: 30px;
 }
 
 /* .lista-filmes a {

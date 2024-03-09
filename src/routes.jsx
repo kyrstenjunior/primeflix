@@ -5,6 +5,7 @@ import Filmes from './pages/Filmes/index';
 import Header from './components/Header';
 import Erro from './pages/Erro';
 import Favoritos from './pages/Favoritos';
+import Footer from './components/Footer';
 
 const RoutesApp = () => {
   return (
@@ -17,6 +18,7 @@ const RoutesApp = () => {
           
           <Route path='*' element={ <Erro /> } /> {/* Precisa der o último */}
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

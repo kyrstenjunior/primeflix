@@ -104,7 +104,7 @@ const index = () => {
       </div>
       <div className="melhores">
         <div className="lista-filmes">
-          <h2>Melhores avaliações</h2>
+          <h2 class="titulo-full">Melhores avaliações</h2>
           <Carousel value={filmesMelhoresAvaliacoes} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} itemTemplate={filmeTemplate} />
         </div>
       </div>
