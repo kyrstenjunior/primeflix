@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header>
-        <Link className='logo' to='/'>Primeflix</Link>
+    <header className='d-flex align-items-center'>
+      <div className="container d-flex align-items-center justify-content-between">
+        <Link className='logo' to='/'><span>Prime</span>flix</Link>
         <Link className='favoritos' to='/favoritos'>Meus filmes</Link>
+      </div>
     </header>
   )
 }

@@ -94,18 +94,16 @@ const index = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="lista-filmes">
-          <div className="recentes">
-            <h2>Filmes recentes</h2>
-            <Carousel value={filmesRecentes} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} itemTemplate={filmeTemplate} />
-          </div>
+      <div className="lista-filmes container">
+        <div className="recentes">
+          <h2 className="text-center text-uppercase my-5">Filmes recentes</h2>
+          <Carousel value={filmesRecentes} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} itemTemplate={filmeTemplate} />
         </div>
       </div>
       <div className="melhores">
-        <div className="lista-filmes">
-          <h2 class="titulo-full">Melhores avaliações</h2>
-          <Carousel value={filmesMelhoresAvaliacoes} numVisible={3} numScroll={3} responsiveOptions={responsiveOptions} itemTemplate={filmeTemplate} />
+        <div className="lista-filmes container">
+          <h2 class="titulo-full text-center text-uppercase my-5">Melhores avaliações</h2>
+          <Carousel value={filmesMelhoresAvaliacoes} numVisible={4} numScroll={4} responsiveOptions={responsiveOptions} itemTemplate={filmeTemplate} />
         </div>
       </div>
     </>

@@ -57,7 +57,7 @@ const index = () => {
   }
 
   return (
-    <div className="filme-info">
+    <div className="filme-info container">
       <h1>{filme.title}</h1>
       <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title} />
       <small>Data de lançamento: {filme.release_date}</small>
